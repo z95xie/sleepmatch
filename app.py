@@ -1,10 +1,10 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
 GA_MEASUREMENT_ID = "G-VMNM6JJ2M4"
 
-components.html(
+st.markdown(
     f"""
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,7 +13,7 @@ components.html(
       gtag('config', '{GA_MEASUREMENT_ID}');
     </script>
     """,
-    height=0,
+    unsafe_allow_html=True,
 )
 
 def base_sleep_by_age(age):
