@@ -1,6 +1,4 @@
 import streamlit as st
-
-import streamlit as st
 import streamlit.components.v1 as components
 
 GA_MEASUREMENT_ID = "G-VMNM6JJ2M4"
